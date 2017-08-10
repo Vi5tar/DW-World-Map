@@ -18,7 +18,7 @@ h1 {
   color: $headings-color;
 }
 
-#grassTile {
+#grassTile div {
   box-shadow:
   //row 1
   4px 0px $lightGrassColor,
@@ -292,7 +292,9 @@ h1 {
   56px 60px $lightGrassColor,
   60px 60px $lightGrassColor;
 
-
+  display: block;
+  float: left;
+  margin-right: 60px;
   background: $lightGrassColor;
   width: 4px;
   height: 4px;
