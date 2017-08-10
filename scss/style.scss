@@ -299,3 +299,57 @@ h1 {
   width: 4px;
   height: 4px;
 }
+
+.grassTile2 {
+  @include oneTile;
+  background: $lightGrassColor;
+}
+
+.grassTile2::after {
+  content: "";
+  box-shadow:
+  //row 1
+  20px 0px $darkGrassColor,
+  52px 0px $darkGrassColor,
+  //row 2
+  8px 4px $darkGrassColor,
+  40px 4px $darkGrassColor,
+  //row 3
+  //row 4
+  24px 12px $darkGrassColor,
+  56px 12px $darkGrassColor,
+  //row 5
+  4px 16px $darkGrassColor,
+  36px 16px $darkGrassColor,
+  //row 6
+  //row 7
+  12px 24px $darkGrassColor,
+  44px 24px $darkGrassColor,
+  //row 8
+  //row 9 same as 1
+  20px 32px $darkGrassColor,
+  52px 32px $darkGrassColor,
+  //row 10 same as 2
+  8px 36px $darkGrassColor,
+  40px 36px $darkGrassColor,
+  //row 11 same as 3
+  //row 12 same as 4
+  24px 44px $darkGrassColor,
+  56px 44px $darkGrassColor,
+  //row 13 same as 5
+  4px 48px $darkGrassColor,
+  36px 48px $darkGrassColor,
+  //row 14 same as 6
+  //row 15 same as 7
+  12px 56px $darkGrassColor,
+  44px 56px $darkGrassColor;
+  //row 16 same as 8
+
+
+  display: block;
+  //float: left;
+  //margin-right: 60px;
+  background: $lightGrassColor;
+  width: 4px;
+  height: 4px;
+}

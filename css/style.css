@@ -11,4 +11,17 @@ h1 {
   width: 4px;
   height: 4px; }
 
+.grassTile2 {
+  width: 64px;
+  height: 64px;
+  background: #80d010; }
+
+.grassTile2::after {
+  content: "";
+  box-shadow: 20px 0px #00a800, 52px 0px #00a800, 8px 4px #00a800, 40px 4px #00a800, 24px 12px #00a800, 56px 12px #00a800, 4px 16px #00a800, 36px 16px #00a800, 12px 24px #00a800, 44px 24px #00a800, 20px 32px #00a800, 52px 32px #00a800, 8px 36px #00a800, 40px 36px #00a800, 24px 44px #00a800, 56px 44px #00a800, 4px 48px #00a800, 36px 48px #00a800, 12px 56px #00a800, 44px 56px #00a800;
+  display: block;
+  background: #80d010;
+  width: 4px;
+  height: 4px; }
+
 /*# sourceMappingURL=style.css.map */
