@@ -599,15 +599,28 @@ $row16: $pixelHeight * 15;
   $col14 $row16 $black;
 }
 
+.hillTile {
+  @include oneTile;
+  background: $lightGrassColor;
+}
+
 #main {
   position: relative;
 }
 
-#test1 {
-  position: absolute;
-}
+//#pos1 {
+//  position: absolute;
+//}
 
-#test2 {
-  position: absolute;
-  left: $pixelWidth * 16;
+//#pos2 {
+  //position: absolute;
+  //left: $pixelWidth * 16;
+//}
+@for $k from 0 through 15 {
+  @for $i from 0 through 15 {
+    #pos#{$k}-#{$i} {
+      position: absolute;
+      top: $pixelHeight * (16 * $k);
+      left: $pixelWidth * (16 * $i)}
+  }
 }
