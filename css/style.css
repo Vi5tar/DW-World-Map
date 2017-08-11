@@ -38,6 +38,14 @@
   height: 64px;
   background: #80d010; }
 
+.hillTile::after {
+  content: "";
+  display: block;
+  background: #80d010;
+  width: 4px;
+  height: 4px;
+  box-shadow: 52px 0px black, 8px 4px black, 40px 4px black, 24px 12px black, 28px 12px black, 32px 12px black, 36px 12px black, 56px 12px black, 4px 16px black, 20px 16px black, 40px 16px black, 16px 20px black, 24px 20px #fcd8a8, 36px 20px #fcd8a8, 44px 20px black, 12px 24px black, 20px 24px #fcd8a8, 24px 24px #fcd8a8, 40px 24px #fcd8a8, 48px 24px black, 8px 28px black, 16px 28px #fcd8a8, 20px 28px #fcd8a8, 40px 28px #fcd8a8, 44px 28px #fcd8a8, 52px 28px black; }
+
 #main {
   position: relative; }
 

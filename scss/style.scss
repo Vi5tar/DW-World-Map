@@ -2,6 +2,7 @@ $lightGrassColor: rgb(128, 208, 16); //same as light green in tree
 $darkGrassColor: rgb(0, 168, 0); //same as dark green in tree
 $black: rgb(0, 0,0);
 $treeTrunkBrown: rgb(252, 152, 56);
+$hillTan: rgb(252, 216, 168);
 $pixelWidth: 4px;
 $pixelHeight: 4px;
 $col1: $pixelWidth * 0;
@@ -602,6 +603,42 @@ $row16: $pixelHeight * 15;
 .hillTile {
   @include oneTile;
   background: $lightGrassColor;
+}
+
+.hillTile::after {
+  content: "";
+  display: block;
+  background: $lightGrassColor;
+  @include onePixel;
+
+  box-shadow:
+  $col14 $row1 $black,
+  $col3 $row2 $black,
+  $col11 $row2 $black,
+  $col7 $row4 $black,
+  $col8 $row4 $black,
+  $col9 $row4 $black,
+  $col10 $row4 $black,
+  $col15 $row4 $black,
+  $col2 $row5 $black,
+  $col6 $row5 $black,
+  $col11 $row5 $black,
+  $col5 $row6 $black,
+  $col7 $row6 $hillTan,
+  $col10 $row6 $hillTan,
+  $col12 $row6 $black,
+  $col4 $row7 $black,
+  $col6 $row7 $hillTan,
+  $col7 $row7 $hillTan,
+  $col11 $row7 $hillTan,
+  $col13 $row7 $black,
+  $col3 $row8 $black,
+  $col5 $row8 $hillTan,
+  $col6 $row8 $hillTan,
+  $col11 $row8 $hillTan,
+  $col12 $row8 $hillTan,
+  $col14 $row8 $black;
+
 }
 
 #main {
