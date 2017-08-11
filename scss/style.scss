@@ -380,8 +380,7 @@ $row16: $pixelHeight * 15;
   //float: left;
   //margin-right: 60px;
   background: $lightGrassColor;
-  width: $pixelWidth;
-  height: $pixelHeight;
+  @include onePixel;
 }
 
 .treeTile {
@@ -393,8 +392,7 @@ $row16: $pixelHeight * 15;
   content: "";
   display: block;
   background: $lightGrassColor;
-  width: $pixelWidth;
-  height: $pixelHeight;
+  @include onePixel;
 
   box-shadow:
   $col4 $row1 $black,
