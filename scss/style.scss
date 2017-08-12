@@ -1,8 +1,10 @@
 $lightGrassColor: rgb(128, 208, 16); //same as light green in tree
 $darkGrassColor: rgb(0, 168, 0); //same as dark green in tree
 $black: rgb(0, 0,0);
+$white: rgb(252, 252, 252);
 $treeTrunkBrown: rgb(252, 152, 56);
 $hillTan: rgb(252, 216, 168);
+$waterBlue: rgb(0, 112, 236);
 $pixelWidth: 4px;
 $pixelHeight: 4px;
 $col1: $pixelWidth * 0;
@@ -637,7 +639,112 @@ $row16: $pixelHeight * 15;
   $col6 $row8 $hillTan,
   $col11 $row8 $hillTan,
   $col12 $row8 $hillTan,
-  $col14 $row8 $black;
+  $col14 $row8 $black,
+  $col2 $row9 $black,
+  $col4 $row9 $hillTan,
+  $col5 $row9 $black,
+  $col6 $row9 $hillTan,
+  $col8 $row9 $hillTan,
+  $col13 $row9 $hillTan,
+  $col15 $row9 $black,
+  $col1 $row10 $black,
+  $col2 $row10 $hillTan,
+  $col3 $row10 $hillTan,
+  $col4 $row10 $black,
+  $col5 $row10 $hillTan,
+  $col8 $row10 $hillTan,
+  $col9 $row10 $hillTan,
+  $col10 $row10 $black,
+  $col12 $row10 $hillTan,
+  $col13 $row10 $hillTan,
+  $col14 $row10 $hillTan,
+  $col16 $row10 $black,
+  $col1 $row11 $hillTan,
+  $col2 $row11 $black,
+  $col3 $row11 $hillTan,
+  $col4 $row11 $black,
+  $col5 $row11 $hillTan,
+  $col7 $row11 $black,
+  $col8 $row11 $hillTan,
+  $col9 $row11 $hillTan,
+  $col10 $row11 $hillTan,
+  $col11 $row11 $black,
+  $col13 $row11 $hillTan,
+  $col14 $row11 $hillTan,
+  $col15 $row11 $hillTan,
+  $col1 $row12 $black,
+  $col2 $row12 $hillTan,
+  $col3 $row12 $black,
+  $col4 $row12 $hillTan,
+  $col6 $row12 $black,
+  $col7 $row12 $hillTan,
+  $col8 $row12 $hillTan,
+  $col9 $row12 $black,
+  $col10 $row12 $hillTan,
+  $col11 $row12 $black,
+  $col12 $row12 $black,
+  $col14 $row12 $black,
+  $col15 $row12 $hillTan,
+  $col16 $row12 $hillTan,
+  $col1 $row13 $black,
+  $col2 $row13 $black,
+  $col3 $row13 $black,
+  $col5 $row13 $black,
+  $col6 $row13 $black,
+  $col7 $row13 $hillTan,
+  $col8 $row13 $black,
+  $col9 $row13 $hillTan,
+  $col10 $row13 $hillTan,
+  $col11 $row13 $hillTan,
+  $col12 $row13 $black,
+  $col13 $row13 $black,
+  $col14 $row13 $hillTan,
+  $col15 $row13 $hillTan,
+  $col16 $row13 $black,
+  $col3 $row14 $black,
+  $col4 $row14 $black,
+  $col5 $row14 $black,
+  $col7 $row14 $black,
+  $col8 $row14 $black,
+  $col9 $row14 $black,
+  $col10 $row14 $hillTan,
+  $col11 $row14 $black,
+  $col12 $row14 $hillTan,
+  $col13 $row14 $black,
+  $col14 $row14 $black,
+  $col15 $row14 $black,
+  $col9 $row15 $black,
+  $col10 $row15 $black,
+  $col11 $row15 $black,
+  $col12 $row15 $black;
+
+}
+
+.waterTile {
+  @include oneTile;
+  background: $waterBlue;
+}
+
+.waterTile::after {
+  content: "";
+  display: block;
+  background: $waterBlue;
+  @include onePixel;
+
+  box-shadow:
+  $col11 $row2 $white,
+  $col12 $row2 $white,
+  $col10 $row3 $white,
+  $col12 $row3 $white,
+  $col13 $row3 $white,
+  $col3 $row4 $white,
+  $col4 $row4 $white,
+  $col5 $row4 $white,
+  $col15 $row4 $white,
+  $col2 $row5 $white,
+  $col3 $row5 $white,
+  $col5 $row5 $white,
+  $col6 $row5 $white;
 
 }
 
