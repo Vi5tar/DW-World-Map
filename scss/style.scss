@@ -1799,6 +1799,103 @@ $row16: $pixelHeight * 15;
   $col16 $row16 $townGrey;
 }
 
+.sBeachTile {
+  @include oneTile;
+  background: $waterBlue;
+}
+
+.sBeachTile::after {
+  content: "";
+  display: block;
+  background: $waterBlue;
+  @include onePixel;
+
+  box-shadow:
+  $col11 $row2 $white,
+  $col12 $row2 $white,
+  $col10 $row3 $white,
+  $col12 $row3 $white,
+  $col13 $row3 $white,
+  $col3 $row4 $white,
+  $col4 $row4 $white,
+  $col5 $row4 $white,
+  $col15 $row4 $white,
+  $col2 $row5 $white,
+  $col3 $row5 $white,
+  $col5 $row5 $white,
+  $col6 $row5 $white,
+  $col8 $row6 $white,
+  $col13 $row6 $white,
+  $col12 $row7 $white,
+  $col14 $row7 $white,
+  $col3 $row10 $white,
+  $col10 $row10 $white,
+  $col7 $row11 $white,
+  $col15 $row11 $white,
+  $col10 $row12 $townGrey,
+  $col11 $row12 $townGrey,
+  $col12 $row12 $townGrey,
+  $col2 $row13 $white,
+  $col4 $row13 $townGrey,
+  $col5 $row13 $townGrey,
+  $col6 $row13 $townGrey,
+  $col8 $row13 $townGrey,
+  $col9 $row13 $townGrey,
+  $col10 $row13 $townGrey,
+  $col11 $row13 $white,
+  $col12 $row13 $white,
+  $col13 $row13 $townGrey,
+  $col14 $row13 $townGrey,
+  $col1 $row14 $townGrey,
+  $col2 $row14 $townGrey,
+  $col3 $row14 $townGrey,
+  $col4 $row14 $townGrey,
+  $col5 $row14 $white,
+  $col6 $row14 $white,
+  $col7 $row14 $townGrey,
+  $col8 $row14 $townGrey,
+  $col9 $row14 $white,
+  $col10 $row14 $white,
+  $col11 $row14 $townGrey,
+  $col12 $row14 $townGrey,
+  $col13 $row14 $white,
+  $col14 $row14 $townGrey,
+  $col15 $row14 $townGrey,
+  $col16 $row14 $townGrey,
+  $col1 $row15 $townGrey,
+  $col2 $row15 $white,
+  $col3 $row15 $white,
+  $col4 $row15 $white,
+  $col5 $row15 $townGrey,
+  $col6 $row15 $townGrey,
+  $col7 $row15 $white,
+  $col8 $row15 $white,
+  $col9 $row15 $townGrey,
+  $col10 $row15 $townGrey,
+  $col11 $row15 $white,
+  $col12 $row15 $white,
+  $col13 $row15 $townGrey,
+  $col14 $row15 $white,
+  $col15 $row15 $white,
+  $col16 $row15 $townGrey,
+  $col1 $row16 $white,
+  $col2 $row16 $townGrey,
+  $col3 $row16 $townGrey,
+  $col4 $row16 $townGrey,
+  $col5 $row16 $white,
+  $col6 $row16 $white,
+  $col7 $row16 $townGrey,
+  $col8 $row16 $townGrey,
+  $col9 $row16 $white,
+  $col10 $row16 $townGrey,
+  $col11 $row16 $townGrey,
+  $col12 $row16 $townGrey,
+  $col13 $row16 $white,
+  $col14 $row16 $townGrey,
+  $col15 $row16 $townGrey,
+  $col16 $row16 $white;
+}
+
 #main {
   position: relative;
 }
