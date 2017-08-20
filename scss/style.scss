@@ -6,8 +6,9 @@ $treeTrunkBrown: rgb(252, 152, 56);
 $hillTan: rgb(252, 216, 168);
 $waterBlue: rgb(0, 112, 236);
 $townGrey: rgb(188, 188, 188);
-$pixelWidth: 3px;
-$pixelHeight: 3px;
+$darkMountainGrey: rgb(116, 116, 116);
+$pixelWidth: 20px;
+$pixelHeight: 20px;
 $col1: $pixelWidth * 0;
 $col2: $pixelWidth * 1;
 $col3: $pixelWidth * 2;
@@ -1894,6 +1895,63 @@ $row16: $pixelHeight * 15;
   $col14 $row16 $townGrey,
   $col15 $row16 $townGrey,
   $col16 $row16 $white;
+}
+
+.mountainTile {
+  @include oneTile;
+  background: $lightGrassColor;
+}
+
+.mountainTile::after {
+  content: "";
+  display: block;
+  background: $lightGrassColor;
+  @include onePixel;
+
+  box-shadow:
+  $col6 $row1 $black,
+  $col7 $row1 $darkMountainGrey,
+  $col14 $row1 $darkMountainGrey,
+  $col3 $row2 $darkMountainGrey,
+  $col5 $row2 $black,
+  $col6 $row2 $black,
+  $col7 $row2 $townGrey,
+  $col8 $row2 $black,
+  $col11 $row2 $darkMountainGrey,
+  $col5 $row3 $black,
+  $col6 $row3 $darkMountainGrey,
+  $col7 $row3 $townGrey,
+  $col8 $row3 $black,
+  $col12 $row3 $black,
+  $col5 $row4 $black,
+  $col6 $row4 $darkMountainGrey,
+  $col7 $row4 $townGrey,
+  $col8 $row4 $black,
+  $col11 $row4 $black,
+  $col12 $row4 $townGrey,
+  $col13 $row4 $black,
+  $col15 $row4 $darkMountainGrey,
+  $col2 $row5 $darkMountainGrey,
+  $col4 $row5 $black,
+  $col5 $row5 $black,
+  $col6 $row5 $darkMountainGrey,
+  $col7 $row5 $townGrey,
+  $col8 $row5 $darkMountainGrey,
+  $col10 $row5 $black,
+  $col11 $row5 $darkMountainGrey,
+  $col12 $row5 $townGrey,
+  $col13 $row5 $black,
+  $col4 $row6 $black,
+  $col5 $row6 $black,
+  $col6 $row6 $darkMountainGrey,
+  $col7 $row6 $townGrey,
+  $col8 $row6 $townGrey,
+  $col9 $row6 $black,
+  $col10 $row6 $black,
+  $col11 $row6 $darkMountainGrey,
+  $col12 $row6 $townGrey,
+  $col13 $row6 $townGrey,
+  $col14 $row6 $black;
 }
 
 #main {
