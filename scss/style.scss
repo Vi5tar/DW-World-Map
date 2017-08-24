@@ -7,6 +7,7 @@ $hillTan: rgb(252, 216, 168);
 $waterBlue: rgb(0, 112, 236);
 $townGrey: rgb(188, 188, 188);
 $darkMountainGrey: rgb(116, 116, 116);
+$desertTan: rgb(252, 216, 168);
 $pixelWidth: 3px;
 $pixelHeight: 3px;
 $col1: $pixelWidth * 0;
@@ -2093,12 +2094,128 @@ $row16: $pixelHeight * 15;
   $col14 $row16 $black;
 }
 
+.swampTile {
+  @include oneTile;
+  background: $black;
+}
+
+.swampTile::after {
+  content: "";
+  display: block;
+  background: $black;
+  @include onePixel;
+
+  box-shadow:
+  $col4 $row1 $lightGrassColor,
+  $col5 $row1 $lightGrassColor,
+  $col12 $row1 $lightGrassColor,
+  $col13 $row1 $lightGrassColor,
+  $col1 $row2 $darkGrassColor,
+  $col2 $row2 $darkGrassColor,
+  $col9 $row2 $darkGrassColor,
+  $col10 $row2 $darkGrassColor,
+  $col7 $row3 $lightGrassColor,
+  $col8 $row3 $lightGrassColor,
+  $col15 $row3 $lightGrassColor,
+  $col16 $row3 $lightGrassColor,
+  $col2 $row4 $darkGrassColor,
+  $col3 $row4 $darkGrassColor,
+  $col10 $row4 $darkGrassColor,
+  $col11 $row4 $darkGrassColor,
+  $col5 $row5 $lightGrassColor,
+  $col6 $row5 $lightGrassColor,
+  $col13 $row5 $lightGrassColor,
+  $col14 $row5 $lightGrassColor,
+  $col1 $row6 $lightGrassColor,
+  $col8 $row6 $lightGrassColor,
+  $col9 $row6 $lightGrassColor,
+  $col16 $row6 $lightGrassColor,
+  $col3 $row7 $darkGrassColor,
+  $col4 $row7 $darkGrassColor,
+  $col11 $row7 $darkGrassColor,
+  $col12 $row7 $darkGrassColor,
+  $col6 $row8 $darkGrassColor,
+  $col7 $row8 $darkGrassColor,
+  $col14 $row8 $darkGrassColor,
+  $col15 $row8 $darkGrassColor,
+  $col4 $row9 $lightGrassColor,
+  $col5 $row9 $lightGrassColor,
+  $col12 $row9 $lightGrassColor,
+  $col13 $row9 $lightGrassColor,
+  $col1 $row10 $darkGrassColor,
+  $col2 $row10 $darkGrassColor,
+  $col9 $row10 $darkGrassColor,
+  $col10 $row10 $darkGrassColor,
+  $col7 $row11 $lightGrassColor,
+  $col8 $row11 $lightGrassColor,
+  $col15 $row11 $lightGrassColor,
+  $col16 $row11 $lightGrassColor,
+  $col2 $row12 $darkGrassColor,
+  $col3 $row12 $darkGrassColor,
+  $col10 $row12 $darkGrassColor,
+  $col11 $row12 $darkGrassColor,
+  $col5 $row13 $lightGrassColor,
+  $col6 $row13 $lightGrassColor,
+  $col13 $row13 $lightGrassColor,
+  $col14 $row13 $lightGrassColor,
+  $col1 $row14 $lightGrassColor,
+  $col8 $row14 $lightGrassColor,
+  $col9 $row14 $lightGrassColor,
+  $col16 $row14 $lightGrassColor,
+  $col3 $row15 $darkGrassColor,
+  $col4 $row15 $darkGrassColor,
+  $col11 $row15 $darkGrassColor,
+  $col12 $row15 $darkGrassColor,
+  $col6 $row16 $darkGrassColor,
+  $col7 $row16 $darkGrassColor,
+  $col14 $row16 $darkGrassColor,
+  $col15 $row16 $darkGrassColor;
+}
+
+.desertTile {
+  @include oneTile;
+  background: $desertTan;
+}
+
+.desertTile::after {
+  content: "";
+  display: block;
+  background: $desertTan;
+  @include onePixel;
+
+  box-shadow:
+  $col6 $row2 $black,
+  $col14 $row2 $black,
+  $col1 $row3 $black,
+  $col9 $row3 $black,
+  $col4 $row4 $black,
+  $col12 $row4 $black,
+  $col8 $row6 $black,
+  $col16 $row6 $black,
+  $col3 $row7 $black,
+  $col11 $row7 $black,
+  $col6 $row8 $black,
+  $col14 $row8 $black,
+  $col6 $row10 $black,
+  $col14 $row10 $black,
+  $col1 $row11 $black,
+  $col9 $row11 $black,
+  $col4 $row12 $black,
+  $col12 $row12 $black,
+  $col8 $row14 $black,
+  $col16 $row14 $black,
+  $col3 $row15 $black,
+  $col11 $row15 $black,
+  $col6 $row16 $black,
+  $col14 $row16 $black;
+}
+
 #main {
   position: relative;
 }
 
-@for $k from 0 through 15 {
-  @for $i from 0 through 15 {
+@for $k from -1 through 15 {
+  @for $i from -1 through 15 {
     #pos#{$k}-#{$i} {
       position: absolute;
       top: $pixelHeight * (16 * $k);
