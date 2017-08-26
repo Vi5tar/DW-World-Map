@@ -10,6 +10,7 @@ $darkMountainGrey: rgb(116, 116, 116);
 $desertTan: rgb(252, 216, 168);
 $pixelWidth: 3px;
 $pixelHeight: 3px;
+$offSet: 14;
 $tileWidth: $pixelWidth * 16;
 $tileHeight: $pixelHeight * 16;
 $col1: $pixelWidth * 0;
@@ -2217,12 +2218,12 @@ $row16: $pixelHeight * 15;
 }
 #main {
   position: absolute;
-  top: $tileHeight * 2;
-  left: $tileWidth * 2;
+  top: $tileHeight * $offSet;
+  left: $tileWidth * $offSet;
 }
 
-@for $k from -2 through 26 {
-  @for $i from -2 through 26 {
+@for $k from -$offSet through 26 {
+  @for $i from -$offSet through 26 {
     #pos#{$k}-#{$i} {
       position: absolute;
       top: $pixelHeight * (16 * $k);
