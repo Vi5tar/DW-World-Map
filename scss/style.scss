@@ -10,7 +10,7 @@ $darkMountainGrey: rgb(116, 116, 116);
 $desertTan: rgb(252, 216, 168);
 $pixelWidth: 3px;
 $pixelHeight: 3px;
-$offSet: 21;
+$offSet: 22;
 $tileWidth: $pixelWidth * 16;
 $tileHeight: $pixelHeight * 16;
 $col1: $pixelWidth * 0;
@@ -2230,4 +2230,20 @@ $row16: $pixelHeight * 15;
       left: $pixelWidth * (16 * $i);
     }
   }
+}
+
+@for $m from 0 through 10 {
+  #util#{$m} {
+    position: absolute;
+    top: -$tileHeight * $offSet;
+    left: -($tileWidth * $offSet) + ($pixelWidth * (16 * $m));
+  }
+}
+
+.textBox {
+  position: absolute;
+  top: -($tileHeight * $offSet) + ($pixelHeight * 16);
+  left: -$tileHeight * $offSet;
+  width: 400px;
+  height: 400px;
 }
