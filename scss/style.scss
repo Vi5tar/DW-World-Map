@@ -2232,11 +2232,11 @@ $row16: $pixelHeight * 15;
   }
 }
 
-@for $m from 0 through 10 {
+@for $m from 0 through 15 {
   #util#{$m} {
     position: absolute;
     top: -$tileHeight * $offSet;
-    left: -($tileWidth * $offSet) + ($pixelWidth * (16 * $m));
+    left: -($tileWidth * $offSet) + ($pixelWidth * (18 * $m));
   }
 }
 
@@ -2246,4 +2246,30 @@ $row16: $pixelHeight * 15;
   left: -$tileHeight * $offSet;
   width: 400px;
   height: 400px;
+}
+
+.undoButton {
+  position: absolute;
+  top: -($tileHeight * $offSet) + ($pixelHeight * 16);
+  left: -$tileHeight * $offSet + 410;
+}
+
+.clearButton {
+  position: absolute;
+  top: -($tileHeight * $offSet) + ($pixelHeight * 16);
+  left: -$tileHeight * $offSet + 475;
+}
+
+#columnTracker {
+  position: absolute;
+  top: -($tileHeight * $offSet) + ($pixelHeight * 16);
+  left: -$tileHeight * $offSet + 725;
+  text-align: center;
+}
+
+#rowTracker {
+  position: absolute;
+  top: -($tileHeight * $offSet) + ($pixelHeight * 16);
+  left: -$tileHeight * $offSet + 600;
+  text-align: center;
 }

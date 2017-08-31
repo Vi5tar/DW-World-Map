@@ -12236,52 +12236,77 @@
 #util1 {
   position: absolute;
   top: -1056px;
-  left: -1008px; }
+  left: -1002px; }
 
 #util2 {
   position: absolute;
   top: -1056px;
-  left: -960px; }
+  left: -948px; }
 
 #util3 {
   position: absolute;
   top: -1056px;
-  left: -912px; }
+  left: -894px; }
 
 #util4 {
   position: absolute;
   top: -1056px;
-  left: -864px; }
+  left: -840px; }
 
 #util5 {
   position: absolute;
   top: -1056px;
-  left: -816px; }
+  left: -786px; }
 
 #util6 {
   position: absolute;
   top: -1056px;
-  left: -768px; }
+  left: -732px; }
 
 #util7 {
   position: absolute;
   top: -1056px;
-  left: -720px; }
+  left: -678px; }
 
 #util8 {
   position: absolute;
   top: -1056px;
-  left: -672px; }
+  left: -624px; }
 
 #util9 {
   position: absolute;
   top: -1056px;
-  left: -624px; }
+  left: -570px; }
 
 #util10 {
   position: absolute;
   top: -1056px;
-  left: -576px; }
+  left: -516px; }
+
+#util11 {
+  position: absolute;
+  top: -1056px;
+  left: -462px; }
+
+#util12 {
+  position: absolute;
+  top: -1056px;
+  left: -408px; }
+
+#util13 {
+  position: absolute;
+  top: -1056px;
+  left: -354px; }
+
+#util14 {
+  position: absolute;
+  top: -1056px;
+  left: -300px; }
+
+#util15 {
+  position: absolute;
+  top: -1056px;
+  left: -246px; }
 
 .textBox {
   position: absolute;
@@ -12289,5 +12314,27 @@
   left: -1056px;
   width: 400px;
   height: 400px; }
+
+.undoButton {
+  position: absolute;
+  top: -1008px;
+  left: -646px; }
+
+.clearButton {
+  position: absolute;
+  top: -1008px;
+  left: -581px; }
+
+#columnTracker {
+  position: absolute;
+  top: -1008px;
+  left: -331px;
+  text-align: center; }
+
+#rowTracker {
+  position: absolute;
+  top: -1008px;
+  left: -456px;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
