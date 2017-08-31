@@ -109,6 +109,11 @@ function plusColumn() {
   $("#columnCount").html(column);
 }
 
+function matchRow() {
+  column = row;
+  $("#columnCount").html(column);
+}
+
 function addSelection() {
   theCodeArray.push('<div id="pos' + row + '-' + column + '" class="' + selection + '"></div>');
   writeToText();
