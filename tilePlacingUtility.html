@@ -12,13 +12,38 @@
 
 </head>
 
-<body>
+<body style="background: gray;">
   <div id="border">
     <div id="main">
       <div id="util0" class="grassTile2" onclick="placeGrass()"></div>
       <div id="util1" class="treeTile" onclick="placeTree()"></div>
-      <div id="util2" class="mountainTile" onclick="placeMountain()"></div>
+      <div id="util2" class="hillTile" onclick="placeHill()"></div>
+      <div id="util3" class="mountainTile" onclick="placeMountain()"></div>
+      <div id="util4" class="swampTile" onclick="placeSwamp()"></div>
+      <div id="util5" class="desertTile" onclick="placeDesert()"></div>
+      <div id="util6" class="waterTile" onclick="placeWater()"></div>
+      <div id="util7" class="nBeachTile" onclick="placeNBeach()"></div>
+      <div id="util8" class="nwBeachTile" onclick="placeNWBeach()"></div>
+      <div id="util9" class="nwsBeachTile" onclick="placeNWSBeach()"></div>
+      <div id="util10" class="wBeachTile" onclick="placeWBeach()"></div>
+      <div id="util11" class="eBeachTile" onclick="placeEBeach()"></div>
+      <div id="util12" class="seBeachTile" onclick="placeSEBeach()"></div>
+      <div id="util13" class="sBeachTile" onclick="placeSBeach()"></div>
+      <div id="util14" class="townTile" onclick="placeTown()"></div>
+      <div id="util15" class="castleTile" onclick="placeCastle()"></div>
       <textarea id="txt1" class="textBox"></textarea>
+      <button class="undoButton" onclick="undo()">UnDo</button>
+      <button class="clearButton" onclick="clearCode()">Clear Code</button>
+      <div id="rowTracker">
+        <button onclick="minusRow()">-</button> Row
+        <button onclick="plusRow()">+</button>
+        <div id="rowCount"></div>
+      </div>
+      <div id="columnTracker">
+        <button onclick="minusColumn()">-</button> Column
+        <button onclick="plusColumn()">+</button>
+        <div id="columnCount"></div>
+      </div>
     </div>
   </div>
 
