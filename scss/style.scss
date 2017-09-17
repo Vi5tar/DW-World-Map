@@ -2223,7 +2223,7 @@ $row16: $pixelHeight * 15;
 }
 
 @for $k from -$offSet through 26 {
-  @for $i from -$offSet through 40 {
+  @for $i from -$offSet through 60 {
     #pos#{$k}-#{$i} {
       position: absolute;
       top: $pixelHeight * (16 * $k);
