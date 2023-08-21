@@ -46,8 +46,6 @@ $row14: $pixelHeight * 13;
 $row15: $pixelHeight * 14;
 $row16: $pixelHeight * 15;
 
-
-
 @mixin oneTile {
   width: $pixelWidth * 16;
   height: $pixelHeight * 16;
@@ -58,294 +56,11 @@ $row16: $pixelHeight * 15;
   height: $pixelHeight;
 }
 
-#grassTile div {
-  box-shadow:
-  //row 1
-  $col2 $row1 $lightGrassColor,
-  $col3 $row1 $lightGrassColor,
-  $col4 $row1 $lightGrassColor,
-  $col5 $row1 $lightGrassColor,
-  $col6 $row1 $darkGrassColor,
-  $col7 $row1 $lightGrassColor,
-  $col8 $row1 $lightGrassColor,
-  $col9 $row1 $lightGrassColor,
-  $col10 $row1 $lightGrassColor,
-  $col11 $row1 $lightGrassColor,
-  $col12 $row1 $lightGrassColor,
-  $col13 $row1 $lightGrassColor,
-  $col14 $row1 $darkGrassColor,
-  $col15 $row1 $lightGrassColor,
-  $col16 $row1 $lightGrassColor,
-  //row 2
-  $col1 $row2 $lightGrassColor,
-  $col2 $row2 $lightGrassColor,
-  $col3 $row2 $darkGrassColor,
-  $col4 $row2 $lightGrassColor,
-  $col5 $row2 $lightGrassColor,
-  $col6 $row2 $lightGrassColor,
-  $col7 $row2 $lightGrassColor,
-  $col8 $row2 $lightGrassColor,
-  $col9 $row2 $lightGrassColor,
-  $col10 $row2 $lightGrassColor,
-  $col11 $row2 $darkGrassColor,
-  $col12 $row2 $lightGrassColor,
-  $col13 $row2 $lightGrassColor,
-  $col14 $row2 $lightGrassColor,
-  $col15 $row2 $lightGrassColor,
-  $col16 $row2 $lightGrassColor,
-  //row 3
-  $col1 $row3 $lightGrassColor,
-  $col2 $row3 $lightGrassColor,
-  $col3 $row3 $lightGrassColor,
-  $col4 $row3 $lightGrassColor,
-  $col5 $row3 $lightGrassColor,
-  $col6 $row3 $lightGrassColor,
-  $col7 $row3 $lightGrassColor,
-  $col8 $row3 $lightGrassColor,
-  $col9 $row3 $lightGrassColor,
-  $col10 $row3 $lightGrassColor,
-  $col11 $row3 $lightGrassColor,
-  $col12 $row3 $lightGrassColor,
-  $col13 $row3 $lightGrassColor,
-  $col14 $row3 $lightGrassColor,
-  $col15 $row3 $lightGrassColor,
-  $col16 $row3 $lightGrassColor,
-  //row 4
-  $col1 $row4 $lightGrassColor,
-  $col2 $row4 $lightGrassColor,
-  $col3 $row4 $lightGrassColor,
-  $col4 $row4 $lightGrassColor,
-  $col5 $row4 $lightGrassColor,
-  $col6 $row4 $lightGrassColor,
-  $col7 $row4 $darkGrassColor,
-  $col8 $row4 $lightGrassColor,
-  $col9 $row4 $lightGrassColor,
-  $col10 $row4 $lightGrassColor,
-  $col11 $row4 $lightGrassColor,
-  $col12 $row4 $lightGrassColor,
-  $col13 $row4 $lightGrassColor,
-  $col14 $row4 $lightGrassColor,
-  $col15 $row4 $darkGrassColor,
-  $col16 $row4 $lightGrassColor,
-  //row 5
-  $col1 $row5 $lightGrassColor,
-  $col2 $row5 $darkGrassColor,
-  $col3 $row5 $lightGrassColor,
-  $col4 $row5 $lightGrassColor,
-  $col5 $row5 $lightGrassColor,
-  $col6 $row5 $lightGrassColor,
-  $col7 $row5 $lightGrassColor,
-  $col8 $row5 $lightGrassColor,
-  $col9 $row5 $lightGrassColor,
-  $col10 $row5 $darkGrassColor,
-  $col11 $row5 $lightGrassColor,
-  $col12 $row5 $lightGrassColor,
-  $col13 $row5 $lightGrassColor,
-  $col14 $row5 $lightGrassColor,
-  $col15 $row5 $lightGrassColor,
-  $col16 $row5 $lightGrassColor,
-  //row 6
-  $col1 $row6 $lightGrassColor,
-  $col2 $row6 $lightGrassColor,
-  $col3 $row6 $lightGrassColor,
-  $col4 $row6 $lightGrassColor,
-  $col5 $row6 $lightGrassColor,
-  $col6 $row6 $lightGrassColor,
-  $col7 $row6 $lightGrassColor,
-  $col8 $row6 $lightGrassColor,
-  $col9 $row6 $lightGrassColor,
-  $col10 $row6 $lightGrassColor,
-  $col11 $row6 $lightGrassColor,
-  $col12 $row6 $lightGrassColor,
-  $col13 $row6 $lightGrassColor,
-  $col14 $row6 $lightGrassColor,
-  $col15 $row6 $lightGrassColor,
-  $col16 $row6 $lightGrassColor,
-  //row 7
-  $col1 $row7 $lightGrassColor,
-  $col2 $row7 $lightGrassColor,
-  $col3 $row7 $lightGrassColor,
-  $col4 $row7 $darkGrassColor,
-  $col5 $row7 $lightGrassColor,
-  $col6 $row7 $lightGrassColor,
-  $col7 $row7 $lightGrassColor,
-  $col8 $row7 $lightGrassColor,
-  $col9 $row7 $lightGrassColor,
-  $col10 $row7 $lightGrassColor,
-  $col11 $row7 $lightGrassColor,
-  $col12 $row7 $darkGrassColor,
-  $col13 $row7 $lightGrassColor,
-  $col14 $row7 $lightGrassColor,
-  $col15 $row7 $lightGrassColor,
-  $col16 $row7 $lightGrassColor,
-  //row 8
-  $col1 $row8 $lightGrassColor,
-  $col2 $row8 $lightGrassColor,
-  $col3 $row8 $lightGrassColor,
-  $col4 $row8 $lightGrassColor,
-  $col5 $row8 $lightGrassColor,
-  $col6 $row8 $lightGrassColor,
-  $col7 $row8 $lightGrassColor,
-  $col8 $row8 $lightGrassColor,
-  $col9 $row8 $lightGrassColor,
-  $col10 $row8 $lightGrassColor,
-  $col11 $row8 $lightGrassColor,
-  $col12 $row8 $lightGrassColor,
-  $col13 $row8 $lightGrassColor,
-  $col14 $row8 $lightGrassColor,
-  $col15 $row8 $lightGrassColor,
-  $col16 $row8 $lightGrassColor,
-  //row 9 same as 1
-  $col1 $row9 $lightGrassColor,
-  $col2 $row9 $lightGrassColor,
-  $col3 $row9 $lightGrassColor,
-  $col4 $row9 $lightGrassColor,
-  $col5 $row9 $lightGrassColor,
-  $col6 $row9 $darkGrassColor,
-  $col7 $row9 $lightGrassColor,
-  $col8 $row9 $lightGrassColor,
-  $col9 $row9 $lightGrassColor,
-  $col10 $row9 $lightGrassColor,
-  $col11 $row9 $lightGrassColor,
-  $col12 $row9 $lightGrassColor,
-  $col13 $row9 $lightGrassColor,
-  $col14 $row9 $darkGrassColor,
-  $col15 $row9 $lightGrassColor,
-  $col16 $row9 $lightGrassColor,
-  //row 10 same as 2
-  $col1 $row10 $lightGrassColor,
-  $col2 $row10 $lightGrassColor,
-  $col3 $row10 $darkGrassColor,
-  $col4 $row10 $lightGrassColor,
-  $col5 $row10 $lightGrassColor,
-  $col6 $row10 $lightGrassColor,
-  $col7 $row10 $lightGrassColor,
-  $col8 $row10 $lightGrassColor,
-  $col9 $row10 $lightGrassColor,
-  $col10 $row10 $lightGrassColor,
-  $col11 $row10 $darkGrassColor,
-  $col12 $row10 $lightGrassColor,
-  $col13 $row10 $lightGrassColor,
-  $col14 $row10 $lightGrassColor,
-  $col15 $row10 $lightGrassColor,
-  $col16 $row10 $lightGrassColor,
-  //row 11 same as 3
-  $col1 $row11 $lightGrassColor,
-  $col2 $row11 $lightGrassColor,
-  $col3 $row11 $lightGrassColor,
-  $col4 $row11 $lightGrassColor,
-  $col5 $row11 $lightGrassColor,
-  $col6 $row11 $lightGrassColor,
-  $col7 $row11 $lightGrassColor,
-  $col8 $row11 $lightGrassColor,
-  $col9 $row11 $lightGrassColor,
-  $col10 $row11 $lightGrassColor,
-  $col11 $row11 $lightGrassColor,
-  $col12 $row11 $lightGrassColor,
-  $col13 $row11 $lightGrassColor,
-  $col14 $row11 $lightGrassColor,
-  $col15 $row11 $lightGrassColor,
-  $col16 $row11 $lightGrassColor,
-  //row 12 same as 4
-  $col1 $row12 $lightGrassColor,
-  $col2 $row12 $lightGrassColor,
-  $col3 $row12 $lightGrassColor,
-  $col4 $row12 $lightGrassColor,
-  $col5 $row12 $lightGrassColor,
-  $col6 $row12 $lightGrassColor,
-  $col7 $row12 $darkGrassColor,
-  $col8 $row12 $lightGrassColor,
-  $col9 $row12 $lightGrassColor,
-  $col10 $row12 $lightGrassColor,
-  $col11 $row12 $lightGrassColor,
-  $col12 $row12 $lightGrassColor,
-  $col13 $row12 $lightGrassColor,
-  $col14 $row12 $lightGrassColor,
-  $col15 $row12 $darkGrassColor,
-  $col16 $row12 $lightGrassColor,
-  //row 13 same as 5
-  $col1 $row13 $lightGrassColor,
-  $col2 $row13 $darkGrassColor,
-  $col3 $row13 $lightGrassColor,
-  $col4 $row13 $lightGrassColor,
-  $col5 $row13 $lightGrassColor,
-  $col6 $row13 $lightGrassColor,
-  $col7 $row13 $lightGrassColor,
-  $col8 $row13 $lightGrassColor,
-  $col9 $row13 $lightGrassColor,
-  $col10 $row13 $darkGrassColor,
-  $col11 $row13 $lightGrassColor,
-  $col12 $row13 $lightGrassColor,
-  $col13 $row13 $lightGrassColor,
-  $col14 $row13 $lightGrassColor,
-  $col15 $row13 $lightGrassColor,
-  $col16 $row13 $lightGrassColor,
-  //row 14 same as 6
-  $col1 $row14 $lightGrassColor,
-  $col2 $row14 $lightGrassColor,
-  $col3 $row14 $lightGrassColor,
-  $col4 $row14 $lightGrassColor,
-  $col5 $row14 $lightGrassColor,
-  $col6 $row14 $lightGrassColor,
-  $col7 $row14 $lightGrassColor,
-  $col8 $row14 $lightGrassColor,
-  $col9 $row14 $lightGrassColor,
-  $col10 $row14 $lightGrassColor,
-  $col11 $row14 $lightGrassColor,
-  $col12 $row14 $lightGrassColor,
-  $col13 $row14 $lightGrassColor,
-  $col14 $row14 $lightGrassColor,
-  $col15 $row14 $lightGrassColor,
-  $col16 $row14 $lightGrassColor,
-  //row 15 same as 7
-  $col1 $row15 $lightGrassColor,
-  $col2 $row15 $lightGrassColor,
-  $col3 $row15 $lightGrassColor,
-  $col4 $row15 $darkGrassColor,
-  $col5 $row15 $lightGrassColor,
-  $col6 $row15 $lightGrassColor,
-  $col7 $row15 $lightGrassColor,
-  $col8 $row15 $lightGrassColor,
-  $col9 $row15 $lightGrassColor,
-  $col10 $row15 $lightGrassColor,
-  $col11 $row15 $lightGrassColor,
-  $col12 $row15 $darkGrassColor,
-  $col13 $row15 $lightGrassColor,
-  $col14 $row15 $lightGrassColor,
-  $col15 $row15 $lightGrassColor,
-  $col16 $row15 $lightGrassColor,
-  //row 16 same as 8
-  $col1 $row16 $lightGrassColor,
-  $col2 $row16 $lightGrassColor,
-  $col3 $row16 $lightGrassColor,
-  $col4 $row16 $lightGrassColor,
-  $col5 $row16 $lightGrassColor,
-  $col6 $row16 $lightGrassColor,
-  $col7 $row16 $lightGrassColor,
-  $col8 $row16 $lightGrassColor,
-  $col9 $row16 $lightGrassColor,
-  $col10 $row16 $lightGrassColor,
-  $col11 $row16 $lightGrassColor,
-  $col12 $row16 $lightGrassColor,
-  $col13 $row16 $lightGrassColor,
-  $col14 $row16 $lightGrassColor,
-  $col15 $row16 $lightGrassColor,
-  $col16 $row16 $lightGrassColor;
-
-  display: relative;
-  float: left;
-  margin-right: 60px;
-  background: $lightGrassColor;
-  width: $pixelWidth;
-  height: $pixelHeight;
-}
-
-.grassTile2 {
-  @include oneTile;
+.grassTile {
   background: $lightGrassColor;
 }
 
-.grassTile2::after {
+.grassTile::after {
   content: "";
   box-shadow:
   //row 1
@@ -393,7 +108,6 @@ $row16: $pixelHeight * 15;
 }
 
 .treeTile {
-  @include oneTile;
   background: $lightGrassColor;
 }
 
@@ -609,7 +323,6 @@ $row16: $pixelHeight * 15;
 }
 
 .hillTile {
-  @include oneTile;
   background: $lightGrassColor;
 }
 
@@ -726,7 +439,6 @@ $row16: $pixelHeight * 15;
 }
 
 .waterTile {
-  @include oneTile;
   background: $waterBlue;
 }
 
@@ -774,7 +486,6 @@ $row16: $pixelHeight * 15;
 }
 
 .townTile {
-  @include oneTile;
   background: $black;
 }
 
@@ -933,7 +644,6 @@ $row16: $pixelHeight * 15;
 }
 
 .nBeachTile {
-  @include oneTile;
   background: $waterBlue;
 }
 
@@ -1029,7 +739,6 @@ $row16: $pixelHeight * 15;
 }
 
 .nwBeachTile {
-  @include oneTile;
   background: $waterBlue;
 }
 
@@ -1159,7 +868,6 @@ $row16: $pixelHeight * 15;
 }
 
 .castleTile {
-  @include oneTile;
   background: $black;
 }
 
@@ -1310,7 +1018,6 @@ $row16: $pixelHeight * 15;
 }
 
 .nwsBeachTile {
-  @include oneTile;
   background: $waterBlue;
 }
 
@@ -1481,7 +1188,6 @@ $row16: $pixelHeight * 15;
 }
 
 .nesBeachTile {
-  @include oneTile;
   background: $waterBlue;
 }
 
@@ -1652,7 +1358,6 @@ $row16: $pixelHeight * 15;
 }
 
 .wBeachTile {
-  @include oneTile;
   background: $waterBlue;
 }
 
@@ -1748,7 +1453,6 @@ $row16: $pixelHeight * 15;
 }
 
 .eBeachTile {
-  @include oneTile;
   background: $waterBlue;
 }
 
@@ -1845,7 +1549,6 @@ $row16: $pixelHeight * 15;
 }
 
 .seBeachTile {
-  @include oneTile;
   background: $waterBlue;
 }
 
@@ -1976,7 +1679,6 @@ $row16: $pixelHeight * 15;
 }
 
 .swBeachTile {
-  @include oneTile;
   background: $waterBlue;
 }
 
@@ -2113,7 +1815,6 @@ $row16: $pixelHeight * 15;
 }
 
 .neBeachTile {
-  @include oneTile;
   background: $waterBlue;
 }
 
@@ -2250,7 +1951,6 @@ $row16: $pixelHeight * 15;
 }
 
 .sBeachTile {
-  @include oneTile;
   background: $waterBlue;
 }
 
@@ -2347,7 +2047,6 @@ $row16: $pixelHeight * 15;
 }
 
 .mountainTile {
-  @include oneTile;
   background: $lightGrassColor;
 }
 
@@ -2543,7 +2242,6 @@ $row16: $pixelHeight * 15;
 }
 
 .swampTile {
-  @include oneTile;
   background: $black;
 }
 
@@ -2621,7 +2319,6 @@ $row16: $pixelHeight * 15;
 }
 
 .desertTile {
-  @include oneTile;
   background: $desertTan;
 }
 
@@ -2658,23 +2355,16 @@ $row16: $pixelHeight * 15;
   $col14 $row16 $black;
 }
 
-#border {
-  position: relative;
-}
 #main {
-  position: absolute;
-  top: $tileHeight * $offSet;
-  left: $tileWidth * $offSet;
+  display: grid;
 }
 
-@for $k from -$offSet through 26 {
-  @for $i from -$offSet through 90 {
-    #pos#{$k}-#{$i} {
-      position: absolute;
-      top: $pixelHeight * (16 * $k);
-      left: $pixelWidth * (16 * $i);
-    }
-  }
+.row {
+  display: inline-flex;
+}
+
+.tile {
+  @include oneTile;
 }
 
 @for $m from 0 through 18 {
