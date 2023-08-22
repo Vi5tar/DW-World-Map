@@ -292,7 +292,7 @@ function build() {
     24: 'sBeachTile',
     25: 'wBeachTile',
     26: 'neBeachTile',
-    27: 'seBeach',
+    27: 'seBeachTile',
     28: 'swBeachTile',
     29: 'nwBeachTile',
     30: 'wneBeachTile',
